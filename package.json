@@ -1,0 +1,23 @@
+{
+  "name": "emagi-backend-solution",
+  "version": "1.0.0",
+  "description": "One possible set of solutions to the Emagi Backend exercise.",
+  "main": "emagi-data.js",
+  "scripts": {
+    "test": "jest --watch-all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ci-wdi-900/emagi-backend-solution.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ci-wdi-900/emagi-backend-solution/issues"
+  },
+  "homepage": "https://github.com/ci-wdi-900/emagi-backend-solution#readme",
+  "dependencies": {
+    "jest": "^26.1.0"
+  }
+}
