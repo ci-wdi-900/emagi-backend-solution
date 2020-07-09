@@ -31,20 +31,7 @@ describe('emagiSearch', () => {
   it(`returns the appropriate symbol even if the search string is not at the start of the word`, () => {
     const searchTerm1 = 'za'
     const symbols1 = ['🍕'];
-    const searchTerm2 = 'rito'
-    const symbols2 = ['🌯'];
-    const searchTerm3 = 'storm'
-    const symbols3 = ['🌩'];
-
-    expect(emagiSearch(searchTerm1)).toEqual(symbols1);
-    expect(emagiSearch(searchTerm2)).toEqual(symbols2);
-    expect(emagiSearch(searchTerm3)).toEqual(symbols3);
-  })
-
-  it(`can return partial matches`, () => {
-    const searchTerm1 = 'za'
-    const symbols1 = ['🍕'];
-    const searchTerm2 = 'rito'
+    const searchTerm2 = 'urri'
     const symbols2 = ['🌯'];
     const searchTerm3 = 'storm'
     const symbols3 = ['🌩'];
