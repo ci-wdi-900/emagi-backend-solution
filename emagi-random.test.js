@@ -8,7 +8,7 @@ describe('randomElement', () => {
     const result1 = [];
     const result2 = [];
     let count = 0;
-    while (count < 50) {
+    while (count < 10) {
       result1.push(randomElement(arr1))
       result2.push(randomElement(arr2))
       count++;
@@ -28,5 +28,10 @@ describe('randomElement', () => {
     expect(result.every((element) => {
       return element === 3 || element === 4 || element === 5 || element === 6;
     })).toBe(true);
+
+    expect(result.some((element) => element === 3)).toBe(true);
+    expect(result.some((element) => element === 4)).toBe(true);
+    expect(result.some((element) => element === 5)).toBe(true);
+    expect(result.some((element) => element === 6)).toBe(true);
   })
 })
