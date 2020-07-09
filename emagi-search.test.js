@@ -41,19 +41,6 @@ describe('emagiSearch', () => {
     expect(emagiSearch(searchTerm3)).toEqual(symbols3);
   })
 
-  it(`can return partial matches`, () => {
-    const searchTerm1 = 'za'
-    const symbols1 = ['🍕'];
-    const searchTerm2 = 'rito'
-    const symbols2 = ['🌯'];
-    const searchTerm3 = 'storm'
-    const symbols3 = ['🌩'];
-
-    expect(emagiSearch(searchTerm1)).toEqual(symbols1);
-    expect(emagiSearch(searchTerm2)).toEqual(symbols2);
-    expect(emagiSearch(searchTerm3)).toEqual(symbols3);
-  })
-
   it(`can return multiple matches`, () => {
     const searchTerm1 = 'heart'
     const symbols1 = ['💓', '💔'];
